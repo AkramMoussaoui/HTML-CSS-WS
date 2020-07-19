@@ -1,0 +1,257 @@
+body {
+  margin: 0px;
+}
+
+/* -----------------------------Header Part-----------------------------*/
+
+header {
+  display: flex;
+  background-color: rgb(7, 233, 233);
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 1em;
+  margin-left: 10px;
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin-right: 2rem;
+}
+
+/* -----------------------------Home Part-----------------------------*/
+
+#Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  color: white;
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  background-image: url("./clement-h-95YRwf6CNw8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+#Home div {
+  padding: 1rem;
+  background-color: rgb(1, 1, 1, 0.7);
+}
+
+#Home h2 {
+  font-size: 4rem;
+}
+
+#Home h3 {
+  font-size: 3rem;
+}
+
+/* -----------------------------About Part-----------------------------*/
+
+.about_container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about_container p {
+  margin-left: 2em;
+  margin-right: 15em;
+}
+
+.about_container iframe {
+  margin-left: 15em;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+#About h3 {
+  font-size: 3rem;
+  padding-top: 1.5em;
+  text-align: center;
+}
+
+/* -----------------------------Work Part-----------------------------*/
+
+#Work h3 {
+  padding-top: 1.5em;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.p_container {
+  margin-top: -25em;
+  display: flex;
+  height: 400px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+p > a {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.p_container p {
+  font-size: 1.5em;
+  visibility: hidden;
+}
+
+.container img {
+  height: 400px;
+  width: 400px;
+}
+
+.work_part:hover p {
+  visibility: visible;
+}
+
+/* -----------------------------Resume Part-----------------------------*/
+#Resume h3 {
+  padding-top: 1.5em;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.grid_item_1 img {
+  height: 150px;
+  width: 400px;
+}
+
+.resume_container {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: auto;
+  row-gap: 20px;
+}
+
+.grid_item_1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.grid_item_2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.img_container {
+  display: flex;
+  justify-content: center;
+}
+
+/* -----------------------------Contact Part-----------------------------*/
+
+#Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  background-color: rgba(75, 108, 196, 0.5);
+}
+
+#Contact h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.form_container {
+  margin-bottom: 5em;
+}
+
+.form_message * {
+  vertical-align: middle;
+}
+
+.form_container input[type="submit"] {
+  display: table;
+  margin: 0 auto;
+}
+
+/* -----------------------------Footer Part-----------------------------*/
+
+footer {
+  position: relative;
+  top: 6rem;
+  margin-top: 1rem;
+}
+
+.footer_container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  font-family: "Playfair Display", serif;
+  background-color: bisque;
+  text-align: center;
+}
+
+.social i {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.fa-facebook {
+  color: #4267b2;
+}
+
+.fa-linkedin {
+  color: #0072b1;
+}
+
+.fa-github {
+  color: 333;
+}
+
+footer i:hover {
+  cursor: pointer;
+}
+
+/* -----------------------------Media Queries-----------------------------*/
+
+/* Extra small devices */
+@media (max-width: 576px) {
+  nav ul li {
+    list-style-type: none;
+    margin-right: 0.5rem;
+  }
+  header h1 {
+    font-size: 0.75em;
+  }
+}
+/* Small devices (landscape phones, 576px and up)  */
+@media (min-width: 576px) and (max-width: 768px) {
+  header h1 {
+    font-size: 1em;
+  }
+
+  .about_container {
+    flex-wrap: wrap;
+  }
+}
